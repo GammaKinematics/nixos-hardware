@@ -1,0 +1,23 @@
+--- dsdt.dsl
++++ dsdt.dsl
+@@ -18,7 +18,7 @@
+  *     Compiler ID      "INTL"
+  *     Compiler Version 0x20200717 (538969879)
+  */
+-DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
++DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072019)
+ {
+     External (_SB_.APTS, MethodObj)    // 1 Arguments
+     External (_SB_.AWAK, MethodObj)    // 1 Arguments
+@@ -7477,8 +7477,8 @@
+     Scope (_SB.I2CD)
+     {
+         Device (STS)
+         {
+-            Name (_HID, EisaId ("SMOCF05"))  // _HID: Hardware ID
+-            Name (_CID, EisaId ("SMOCF05"))  // _CID: Compatible ID
++            Name (_HID, EisaId ("SMO8B30"))  // _HID: Hardware ID
++            Name (_CID, EisaId ("SMO8B30"))  // _CID: Compatible ID
+             Name (_UID, Zero)  // _UID: Unique ID
+             Method (_STA, 0, NotSerialized)  // _STA: Status
+             {
